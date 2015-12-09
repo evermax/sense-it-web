@@ -1,6 +1,6 @@
 <div data-ng-controller="ProjectListMineCtrl" class="profile-project-list">
     <div data-ng-if="projectList.admin.length">
-        <div class="profile-project-list-header">My projects:</div>
+        <div class="profile-project-list-header">{{ 'PROFILE.PROJECT.MINE' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</div>
         <ul>
             <li data-ng-repeat="project in projectList.admin">
                 <a href data-ui-sref="project.admin.home({projectId:project.id})">
@@ -11,11 +11,11 @@
     </div>
 
     <div>
-        <div class="profile-project-list-header">Projects I've joined:</div>
+        <div class="profile-project-list-header" translate="PROFILE.PROJECT.JOINED"></div>
         <div data-ng-if="!projectList.member.length">
-            You haven't joined any project yet.
-            You can browse <a href data-ui-sref="home">existing projects</a>
-            to find interesting ones, or <a href data-ui-sref="create">create</a> your own.
+            {{ 'PROFILE.PROJECT.NONE_JOINED' | translate }}
+            {{ 'PROFILE.PROJECT.CAN' | translate }} <a href data-ui-sref="home" translate="PROFILE.PROJECT.EXISTING"></a>
+            {{ 'PROFILE.PROJECT.FIND' | translate }} <a href data-ui-sref="create">{{ 'PROFILE.PROJECT.CREATE' | translate }}</a> {{ 'PROFILE.PROJECT.OWN' | translate }}
         </div>
         <ul data-ng-if="projectList.member.length">
             <li data-ng-repeat="project in projectList.member">

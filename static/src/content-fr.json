@@ -1,0 +1,355 @@
+{
+  "COMMON": {
+    "USER": "User",
+    "USERS": "Utilisateurs",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "NAME": "Name",
+    "LOADING": "loading...",
+    "AUTHOR": "Auteur",
+    "ALL": "All",
+    "NEED_TO": "You need to",
+    "NO_TITLE": "No title",
+    "SEE_ALL": "See all",
+    "COMMENT": "comment",
+    "COMMENTS": "comments",
+    "CLICK": "click",
+    "HERE": "here",
+    "PROJECTS": "Projets",
+    "LANGUAGE": "English",
+    "LABEL": {
+      "CREATE": "Créer",
+      "EDIT": "Edit",
+      "SAVE": "Save",
+      "CANCEL": "Cancel",
+      "DELETE": "Delete",
+      "RESET": "Reset",
+      "ADMIN": "Administrateur",
+      "TITLE": "Titre",
+      "OPEN": "Ouvert",
+      "ABOUT": "A propos",
+      "HOME": "Accueil"
+    },
+    "MARK": {
+      "COLON": " : ",
+      "EXCLAMATION": " !",
+      "QUESTION": " ?"
+    },
+    "FILE": {
+      "CURRENT": "Current file",
+      "CANCEL": "Cancel (keep current file)",
+      "DELETE": "Delete file",
+      "SELECT": "Select file",
+      "SELECT_DIFFERENT": "Select different file",
+      "SELECTED": "Selected file"
+    }
+  },
+  "ADMIN": {
+    "ID": "Id",
+    "YES": "Oui",
+    "NO": "Non",
+    "FEATURED": "Promu",
+    "FEATURE": "Promouvoir",
+    "UNFEATURE": "Arrêter de promouvoir",
+    "CONTENT_ID": "Content id",
+    "REPORTS": "Reports",
+    "ACTIONS": "Actions",
+    "APPROVE": "Approve",
+    "TEXTS": "Textes",
+    "CONTENT": "Content",
+    "REPORTED_CONTENT": "Contenu signalé",
+    "REMOVE_PERMISSION": "Retirer la permission",
+    "GRANT_PERMISSION": "Donner la permission",
+    "NOT_ALLOWED": "Sorry, you need admin access to view this page."
+  },
+  "FORUM": {
+    "ADD_CATEGORY": "Add category",
+    "DESCRIPTION": "Description",
+    "NEW": "New forum",
+    "SINGULAR": "Forum",
+    "PLURAL": "Forums",
+    "STARTER": "Starter",
+    "REPLIES": "Replies",
+    "MESSAGE": "Message",
+    "POST": {
+      "VERB": "Post",
+      "PLURAL": "Posts",
+      "LAST": "Last post"
+    },
+    "THREAD": {
+      "SINGULAR": "Thread",
+      "PLURAL": "Threads",
+      "NEW": "New thread",
+      "POST_NEW": "Post new thread",
+      "ABLE_TO": "to post new threads."
+    }
+  },
+  "PROFILE": {
+    "YOURS": "Your profile page",
+    "YOURS_WITH_DOTS": "Your profile...",
+    "DATE_OF_BIRTH": "Date of birth",
+    "LOCATION": "Location",
+    "REGISTER_ACCOUNT": "Register new account",
+    "ACCOUNT": "account",
+    "IMAGE": "Profile image",
+    "UPLOAD_IMAGE": "Upload image",
+    "UPLOAD_NEW_IMAGE": "Upload new image",
+    "COMMENT": {
+      "NEW": "New comment",
+      "NOUN": "comment",
+      "SAID": "said",
+      "SIGN_IN_TO": "to comment on this mission.",
+      "JOIN_TO": "this mission to discuss about it."
+    },
+    "PASSWORD": {
+      "IS_SET": "Password set",
+      "CHANGE": "Change password",
+      "SET": "Set password",
+      "CURRENT": "Current password",
+      "NEW": "New password",
+      "REPEAT": "Repeat password",
+      "NOUN": "Password"
+    },
+    "PROJECT": {
+      "MINE": "My projects",
+      "CAN": "You can browse",
+      "EXISTING": "existing projects",
+      "FIND": "to find interesting ones, or",
+      "CREATE": "create",
+      "OWN": "your own.",
+      "JOINED": "Projects I've joined:",
+      "NONE_JOINED": "You haven't joined and project yet."
+    },
+    "PROVIDER": {
+      "LINKED": "Linked accounts",
+      "SIGN_IN": "... or using one of the following identity providers:",
+      "NO_LINK": "You have not linked a",
+      "YET": "account yet.",
+      "LINK": "Link",
+      "UNLINK": "Unlink",
+      "LINK_WITH": "Link with",
+      "POST": {
+        "BEFORE": "before posting on",
+        "WAITING": "Awaiting response fron",
+        "DUPLICATE": "Sorry, you have posted already the same content! You may need to edit it before posting.",
+        "SUCCESSFUL": "Post successful",
+        "CAPTION": "Caption",
+        "ERROR": {
+          "PERMISSION": "Sorry, there was a problem with the permissions with",
+          "AUTHORIZATION": "Sorry, there was a problem with the authorization with",
+          "RATE": "Sorry, there was a problem with the rate with",
+          "API": "Sorry, there was a problem with the api with",
+          "CONNECTION": "Sorry, there was a problem with the connection with",
+          "UNKNOWN": "Sorry, there was a problem when trying to post your comment."
+        }
+      }
+    },
+    "STATUS": {
+      "NOUN": "Status",
+      "SIGNED_IN": "Vous êtes connecté.",
+      "SIGN_OUT": "Se déconnecter",
+      "SIGN_IN": "Se connecter",
+      "LOG_OUT": "Logout",
+      "REGISTER": "S'enregister",
+      "SIGN_IN_WITH_USERNAME_PWD": "Sign in with your username and password:"
+    }
+  },
+  "PROJECT": {
+    "ANDROID_APP": "Android app.",
+    "OUTLINE": "Outline",
+    "DETAILS": "Details",
+    "VOTES": "Votes",
+    "BUSY": "Busy?",
+    "STILL_EDITED": "This project is still being edited by its author.",
+    "LOG_IN_PARTICIPATE": "before you can participate in projects.",
+    "DATA": "Data",
+    "DATA_DELETION_CONFIRMATION": "Are you sure you want to delete data",
+    "MEMBER": "member",
+    "MEMBERS": "members",
+    "IMAGE": "Image",
+    "SELECT_IMAGE": "Select image",
+    "UPLOADING": "Uploading...",
+    "NEW_TITLE": "Enter the title of your new",
+    "NEW_MISSION": "mission and click \"Create\".",
+    "ACTION": {
+      "OPEN": "Open project",
+      "CLOSE": "Close project",
+      "DELETE": "Delete project",
+      "JOIN": "Join"
+    },
+    "ADMIN": {
+      "USERS": "Participants administration",
+      "SUBMISSION": "Submission administration",
+      "NOT_ALLOWED": "You need admin rights to access this page.",
+      "STAGE": {
+        "SELECTION": "Stage selection",
+        "PROPOSAL": "Proposal stage",
+        "VOTING": "Voting stage",
+        "OUTCOME": "Outcome stage"
+      }
+    },
+    "CREATE": {
+      "OWN": "Create your own",
+      "A": "Create a",
+      "OWN_LOG_IN": "in order to create your own projects!"
+    },
+    "MISSION": {
+      "SINGULAR": "mission",
+      "ADMINISTRATION": "Mission administration",
+      "CREATED_BY": "Mission created by",
+      "LIST_TEASER": "Mission list teaser",
+      "DETAILS": "Mission details",
+      "ADD_BLOCK": "Add block",
+      "OUTLINE": "Mission outline",
+      "STATUS": "Mission status",
+      "JOIN": "Join mission",
+      "LEAVE": "Leave mission",
+      "JOIN_THIS": "join this mission",
+      "UPLOAD_LOG_IN": "to upload images.",
+      "FEATURED": "featured missions",
+      "TYPE": "Mission type",
+      "ANY_TYPE": "Any type",
+      "PLURAL": "missions",
+      "ALL": "All missions",
+      "JOINED": "Joined missions",
+      "NOT_JOINED": "Not joined missions",
+      "BY_ME": "Created by me",
+      "NO_AVAILABLE": "No missions available at the moment.",
+      "AUTHOR": "A mission created by",
+      "SEARCH": {
+        "PLACEHOLDER": "Recherche de mission",
+        "TRY_INCLUDING": "Try searching including",
+        "NON_FEATURED": "non-featured missions",
+        "TRY_WITHOUT": "Try without",
+        "CONDITIONS": "search conditions"
+      }
+    },
+    "PICTURE": {
+      "LAST": "Last picture",
+      "UPLOAD": "Upload picture",
+      "UPLOAD_LOGIN": "or register to upload images to this mission.",
+      "COMMENT_SIGN_IN": "to comment on this picture.",
+      "COMMENT_JOIN": "this mission to discuss about this picture."
+    },
+    "SENSE_IT": {
+      "NOUN": "Sense-it",
+      "TEXT": "Sense-it projects define a data logging profile that can be used to record data using the",
+      "TOGGLE_PLOT": "Toggle plot",
+      "MAP": "Map",
+      "OPEN_MAP": "Open map",
+      "SHOW_VALUE": "Show value",
+      "DATA": {
+        "PROCESSING": "Data processing",
+        "ADD_TRANSF": "Add transformation",
+        "GEOLOCATED": "Geolocated data",
+        "COLLECTION": "Data collection"
+      },
+      "SENSOR": {
+        "NOUN": "Sensor",
+        "ACCELEROMETER": "Accelerometer",
+        "SOUND": "Sound",
+        "MAG_FIELD": "Magnetic field",
+        "GYRO": "Gyroscope",
+        "ORIENTATION": "Orientation",
+        "PRESSURE": "Pressure",
+        "LIGHT": "Light",
+        "TEMPERATURE": "Ambient temperature",
+        "HUMIDITY": "Relative humidity",
+        "RATE": "samples / second",
+        "ADD": "Add sensor input",
+        "DELETE": "Delete sensor input"
+      },
+      "SERIES": {
+        "NOUN": "series",
+        "DELETE": "Delete series",
+        "SIGN_IN_COMMENT": "to comment on this data series.",
+        "JOIN_DISCUSS": "this mission to discuss about this data series."
+      }
+    },
+    "STAGE": {
+      "SEND_PROPOSAL": "Send your ideas",
+      "VOTING": "Voting",
+      "OUTCOME": "Ended"
+    },
+    "STATUS": {
+      "CURRENTLY": "This project is currently",
+      "CLOSED": "closed",
+      "JOINED": "Joined",
+      "CLOSED_PART3": ". Therefore, you can",
+      "CLOSED_PART4": "edit it",
+      "CLOSED_PART5": ", but participants cannot access it. Click on \"Open project\" to make the project public.",
+      "CLOSED_PART6": "(Please note that you cannot edit the project while it is open.)",
+      "OPENED_PART3": ". Therefore, participants can join and browse it. However, you cannot edit it.",
+      "OPENED_PART4": "If you need to edit this project, click on \"Close project\" to enable edition."
+    },
+    "SPOT_IT": {
+      "NOUN": "Spot-it"
+    },
+    "WIN_IT": {
+      "NOUN": "Win-it",
+      "EXPLANATION": "Explanation",
+      "TEXT": "To configure this Win-it mission, you need to configure the fields that will be used by participants to create their answers.",
+      "WINNER": "Winner",
+      "ANSWERS": {
+        "ALL": "All answers",
+        "MINE": "Only mine",
+        "OTHERS": "Only by others",
+        "SELECT": "Select",
+        "MAX": "You have created the maximum number of allowed ideas:",
+        "NO_YET": "No answer has been selected yet."
+      },
+      "FIELD": {
+        "LABEL": "Field label",
+        "TYPE": "Field type",
+        "SINGLE_TEXT": "Single-line text",
+        "MULTIPLE_PLAIN": "Multiple-line plain text",
+        "MULTIPLE_FORMATTED": "Multiple-line formatted text",
+        "ADD": "Add field"
+      },
+      "IDEAS": {
+        "ALL": "all ideas",
+        "SUBMITTED": "Submitted",
+        "NOT_SUBMITTED": "Not submitted yet",
+        "SEE_SUBMITTED": "See and vote all ideas submitted for this mission here.",
+        "MAX_STATEMENT": "You can create up to {{ maxideas }} ideas.",
+        "NEW": "Create new idea",
+        "MINE": "My ideas",
+        "EDIT_YOURS": "See and edit your ideas for this mission here.",
+        "NONE": "no idea yet",
+        "SIGULAR": "idea",
+        "PLURAL": "ideas",
+        "YOURS": "Your ideas"
+      },
+      "SUBMISSION": {
+        "COMPOSITION": "Submission composition",
+        "LIMIT": "Submission limit",
+        "LIMIT_LABEL": "Max answers per participant"
+      },
+      "STAGE": {
+        "PROPOSAL": {
+          "TITLE": "Accepting ideas",
+          "SENTENCE": "This mission is accepting ideas now!",
+          "YOU_CREATED": "You have created",
+          "SEND": "Send",
+          "SUBMIT_JOIN": "You need to join this project to post ideas.",
+          "SUBMIT_LOG": "or register to post ideas."
+        },
+        "VOTING": {
+          "TITLE": "Voting",
+          "SENTENCE": "This mission is now voting the submitted ideas!",
+          "STATE": "have been posted in this mission.",
+          "FAVOURITE": "to vote your favourite!",
+          "SUBMIT_JOIN": "You need to join this project to vote ideas.",
+          "SUBMIT_LOG": "or register to vote ideas."
+        },
+        "OUTCOME": {
+          "TITLE": "Ended",
+          "SENTENCE": "See the outcome of this mission here.",
+          "See": "See",
+          "WAITING": "This mission is waiting for the winner decision!",
+          "WINNER": "This mission has now a winner!"
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,18 @@
-<div class="forum-header">{{forum.node.title}}: New thread</div>
+<div class="forum-header">{{forum.node.title}}{{ 'COMMON.MARK.COLON' | translate }} {{ 'FORUM.THREAD.NEW' | translate }}</div>
 <div class="forum-content">
 
     <form class="form" role="form">
         <div class="form-group">
-            <label for="title">Title:</label>
-            <input id="title" class="form-control" data-ng-model="data.title" placeholder="Title"/>
+            <label for="title">{{ 'COMMON.LABEL.TITLE' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
+            <input id="title" class="form-control" data-ng-model="data.title" placeholder="{{ 'COMMON.LABEL.TITLE' | translate }}"/>
         </div>
         <div class="form-group">
-            <label for="post">Message:</label>
-            <textarea id="post" class="form-control" data-ng-model="data.message" placeholder="Message"></textarea>
+            <label for="post">{{ 'FORUM.MESSAGE' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
+            <textarea id="post" class="form-control" data-ng-model="data.message" placeholder="{{ 'FORUM.MESSAGE' | translate }}"></textarea>
         </div>
         <div class="btn-group">
-            <button class="btn btn-default" data-ng-click="createThread()">Post</button>
-            <button class="btn btn-default" data-ui-sref="forum.node.list">Cancel</button>
+            <button class="btn btn-default" data-ng-click="createThread()" translate="FORUM.POST.VERB"></button>
+            <button class="btn btn-default" data-ui-sref="forum.node.list" translate="COMMON.LABEL.CANCEL"></button>
         </div>
     </form>
 

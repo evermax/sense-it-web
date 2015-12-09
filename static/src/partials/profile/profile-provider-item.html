@@ -6,7 +6,7 @@
         <img src="" data-ng-src="media/{{providerId}}.png" />
         <a href="{{profileUrl}}" target="_blank">{{providerName}}</a>
         <button class="btn btn-default" data-ng-click="deleteConnection(providerId)">
-            Unlink {{providerName}} account
+            {{'PROFILE.PROVIDER.UNLINK' | translate }} {{providerName}} {{ 'PROFILE.ACCOUNT' | translate }}
         </button>
     </p>
 </div>
@@ -14,7 +14,7 @@
     <p>
         <img src="" data-ng-src="media/{{providerId}}.png" />
         {{providerName}}:
-        <button class="btn btn-default" data-ng-click="providerLogin(providerId)">Link with
+        <button class="btn btn-default" data-ng-click="providerLogin(providerId)">{{ 'PROFILE.PROVIDER.LINK_WITH' | translate }}
             {{providerName}}
         </button>
     </p>

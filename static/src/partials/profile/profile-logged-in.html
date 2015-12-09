@@ -1,4 +1,4 @@
-<div class="profile-header">Your profile page</div>
+<div class="profile-header" translate="PROFILE.YOURS"></div>
 <div class="profile-page">
 
 
@@ -9,15 +9,20 @@
             <span data-siw-user-image data-user="status.profile"></span>
         </div>
         <div>
-            <button type="button" class="btn btn-default" data-ng-click="imageForm.open()">{{status.profile.image ?
-                'Upload new image' : 'Upload image'}}
-            </button>
+            <button ng-show="status.profile.image"
+                type="button" class="btn btn-default"
+                data-ng-click="imageForm.open()"
+                translate="PROFILE.UPLOAD_NEW_IMAGE"></button>
+            <button ng-hide="status.profile.image"
+                type="button" class="btn btn-default"
+                data-ng-click="imageForm.open()"
+                translate="PROFILE.UPLOAD_IMAGE"></button>
         </div>
     </div>
     <div data-ng-if="imageForm.isOpen()">
         <form role="form">
             <div class="form-group">
-                <div><label for="file-select-input-image">Profile image:</label></div>
+                <div><label for="file-select-input-image">{{ 'PROFILE.IMAGE' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label></div>
                 <img data-ng-if="filelistener.previewFile" width="50%" data-ng-src="{{filelistener.previewFile}}" src=""/>
                 <img data-ng-if="!filelistener.previewFile" width="50%" data-ng-src="{{status.profile.image | uploadedImage}}" src=""/>
 
@@ -26,8 +31,8 @@
                 </div>
             </div>
             <div class="btn-group">
-                <button type="button" class="btn btn-default" data-ng-click="imageForm.save()">Save</button>
-                <button type="button" class="btn btn-default" data-ng-click="imageForm.cancel()">Cancel</button>
+                <button type="button" class="btn btn-default" data-ng-click="imageForm.save()" translate="COMMON.LABEL.SAVE"></button>
+                <button type="button" class="btn btn-default" data-ng-click="imageForm.cancel()" translate="COMMON.LABEL.CANCEL"></button>
             </div>
         </form>
     </div>

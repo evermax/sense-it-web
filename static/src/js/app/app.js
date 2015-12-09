@@ -2,11 +2,12 @@
 
 /* App Module */
 
-angular.module('senseItWeb', ['ngSanitize', 'ui.router', 'textAngular', 'ui.bootstrap', 'senseItServices'], null).config([
+angular.module('senseItWeb', ['pascalprecht.translate', 'ngSanitize', 'ui.router', 'textAngular', 'ui.bootstrap', 'senseItServices'], null).config([
   '$provide',
   '$stateProvider',
+  '$translateProvider',
   '$urlRouterProvider',
-  function ($provide, $stateProvider, $urlRouterProvider) {
+  function ($provide, $stateProvider, $translateProvider, $urlRouterProvider) {
 
     $stateProvider
       .state('home', {
@@ -174,6 +175,24 @@ angular.module('senseItWeb', ['ngSanitize', 'ui.router', 'textAngular', 'ui.boot
         controller: 'ProfileCtrl'
       });
     $urlRouterProvider.otherwise('/home');
+
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'content-',
+        suffix: '.json'
+    });
+    $translateProvider.determinePreferredLanguage(function () {
+      return getCookie('lang') === 'en' ? 'en' : 'fr';
+    });
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
 
 
     $provide.decorator('taOptions', ['$delegate', function (taOptions) {

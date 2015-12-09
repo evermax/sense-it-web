@@ -1,14 +1,14 @@
 <div data-ng-if="adminAccess()" class="admin-page">
     <div class="admin-header">
-        <span data-siw-menu-item data-menu-linked-state="'admin.users'" data-menu-label="'Users'"></span>
-        <span data-siw-menu-item data-menu-linked-state="'admin.projects'" data-menu-label="'Projects'"></span>
-        <span data-siw-menu-item data-menu-linked-state="'admin.texts'" data-menu-label="'Texts'"></span>
-        <span data-siw-menu-item data-menu-linked-state="'admin.reported'" data-menu-label="'Reported content'"></span>
+        <span data-siw-menu-item data-menu-linked-state="'admin.users'" data-menu-label="'COMMON.USERS' | translate"></span>
+        <span data-siw-menu-item data-menu-linked-state="'admin.projects'" data-menu-label="'COMMON.PROJECTS' | translate"></span>
+        <span data-siw-menu-item data-menu-linked-state="'admin.texts'" data-menu-label="'ADMIN.TEXTS' | translate"></span>
+        <span data-siw-menu-item data-menu-linked-state="'admin.reported'" data-menu-label="'ADMIN.REPORTED_CONTENT' | translate"></span>
     </div>
 
     <div class="admin-content" data-ui-view></div>
 </div>
 
 <div data-ng-if="!adminAccess()" class="admin-page">
-    <p>Sorry, you need admin access to view this page.</p>
+    <p translate="ADMIN.NOT_ALLOWED"></p>
 </div>

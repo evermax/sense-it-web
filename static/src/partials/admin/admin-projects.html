@@ -1,11 +1,11 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Open?</th>
-        <th>Featured?</th>
+        <th translate="ADMIN.ID"></th>
+        <th translate="COMMON.LABEL.TITLE"></th>
+        <th translate="COMMON.AUTHOR"></th>
+        <th>{{ 'COMMON.LABEL.OPEN' | translate }}{{ 'COMMON.MARK.QUESTION' | translate }}</th>
+        <th>{{ 'ADMIN.FEATURED' | translate }}{{ 'COMMON.MARK.QUESTION' | translate }}</th>
     </tr>
     </thead>
     <tbody>
@@ -13,16 +13,17 @@
         <td>{{project.id}}</td>
         <td>{{project.title}}</td>
         <td>{{project.author.username}}</td>
-        <td>{{project.open ? 'Yes' : 'No'}}</td>
+        <td translate="ADMIN.YES" ng-show="project.open"></td>
+        <td translate="ADMIN.NO" ng-hide="project.open"></td>
         <td>
-            <b>{{project.featured ? 'Yes' : 'No'}}</b>
+            <b translate="ADMIN.YES" ng-show="project.featured"></b>
+            <b translate="ADMIN.NO" ng-hide="project.featured"></b>
             <button class="btn btn-default btn-xs"
                     data-ng-click="actions.toggleFeatured(project)">
-                {{project.featured ? 'Unfeature' : 'Feature project'}}
+                <span ng-hide="project.featured" translate="ADMIN.FEATURE"></span>
+                <span ng-show="project.featured" translate="ADMIN.UNFEATURE"></span>
             </button>
         </td>
     </tr>
-
     </tbody>
-
 </table>

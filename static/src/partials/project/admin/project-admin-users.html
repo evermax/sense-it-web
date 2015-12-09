@@ -8,7 +8,7 @@
         <tr>
             <th data-ng-class="headerClass('username')"
                 data-ng-click="headerSort('username')">
-                User
+                {{ 'COMMON.USER' | translate }}
             </th>
             <th data-ng-repeat="column in activityUsersManagement.columns"
                 data-ng-class="headerClass(column.id)"
@@ -17,7 +17,7 @@
             </th>
             <th data-ng-class="headerClass('status')"
                 data-ng-click="headerSort('status')">
-                Status
+                {{ 'PROFILE.STATUS.NOUN' | translate }}
             </th>
         </tr>
         </thead>
@@ -28,7 +28,7 @@
                 data-ng-class="{'clickable': column.callback}" data-ng-click="column.callback(user)">
                 {{column.data(user)}}
             </td>
-            <td>Member</td>
+            <td>{{ 'PROJECT.MEMBER' | translate }}</td>
         </tr>
         </tbody>
     </table>

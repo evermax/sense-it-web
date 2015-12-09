@@ -10,17 +10,17 @@
     <div data-ng-if="form.isOpen()">
         <form role="form" class="form">
             <div class="form-group">
-                <label for="title">Title:</label>
-                <input id="title" class="form-control" data-ng-model="form.values.title" placeholder="Title"/>
+                <label for="title">{{ 'COMMON.LABEL.TITLE' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
+                <input id="title" class="form-control" data-ng-model="form.values.title" placeholder="{{ 'COMMON.LABEL.TITLE' | translate }}"/>
             </div>
             <div class="form-group">
-                <label for="description">Description:</label>
+                <label for="description">{{ 'FORUM.DESCRIPTION' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
                 <textarea id="description" class="form-control" data-ng-model="form.values.description"
-                          placeholder="Description"></textarea>
+                          placeholder="{{ 'FORUM.DESCRIPTION' | translate }}"></textarea>
             </div>
             <div class="btn-group">
-                <button class="btn btn-default" data-ng-click="form.save()">Save</button>
-                <button class="btn btn-default" data-ng-click="form.cancel()">Cancel</button>
+                <button class="btn btn-default" data-ng-click="form.save()" translate="COMMON.LABEL.SAVE"></button>
+                <button class="btn btn-default" data-ng-click="form.cancel()" translate="COMMON.LABEL.CANCEL"></button>
             </div>
         </form>
     </div>

@@ -1,11 +1,11 @@
 <div class="profile-header">
     <span>
-        <a href data-ng-click="loginMode.set('login')" data-ng-class="{'active': loginMode.is('login')}">Sign in</a>
+        <a href data-ng-click="loginMode.set('login')" data-ng-class="{'active': loginMode.is('login')}" translate="PROFILE.STATUS.SIGN_IN"></a>
     </span>
     <span>|</span>
     <span>
         <a href data-ng-click="loginMode.set('register')"
-           data-ng-class="{'active': loginMode.is('register')}">Register</a>
+           data-ng-class="{'active': loginMode.is('register')}" translate="PROFILE.STATUS.REGISTER"></a>
     </span>
 </div>
 <div class="profile-page">
@@ -13,11 +13,11 @@
     <div class="profile-logged-out" data-ng-if="loginMode.is('login')">
 
         <div class="profile-logged-out-form-container">
-            <p>Sign in with your username and password: </p>
+            <p translate="PROFILE.STATUS.SIGN_IN_WITH_USERNAME_PWD"></p>
 
             <form class="form-inline" role="form">
                 <div class="form-group">
-                    <label for="login_username">Username:</label>
+                    <label for="login_username">{{ 'COMMON.USERNAME' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
                     <input id="login_username" type="text" class="form-control"
                            data-ng-model="login.editing.username"/>
                 <span data-ng-if="login.error.username"
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="login_password">Password:</label>
+                    <label for="login_password">{{ 'COMMON.PROFILE.PASSWORD.NOUN' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</label>
                     <input id="login_password" type="password" class="form-control"
                            data-ng-model="login.editing.password"/>
                 <span data-ng-if="login.error.password"
@@ -33,15 +33,16 @@
                 </div>
 
                 <div class="btn-group">
-                    <button class="btn btn-default" data-ng-click="login.submit()">
-                        Sign in
+                    <button class="btn btn-default"
+                        data-ng-click="login.submit()"
+                        translate="PROFILE.STATUS.SIGN_IN">
                     </button>
                 </div>
             </form>
         </div>
 
         <div class="profile-logged-out-form-container">
-            <p>... or using one of the following identity providers:</p>
+            <p translate="PROFILE.PROVIDER.SIGN_IN"></p>
 
             <p>
                 <img class="identity-provider" data-ng-click="providerLogin('google')"
@@ -57,11 +58,13 @@
     <div class="profile-logged-out" data-ng-if="loginMode.is('register')">
 
         <div class="profile-logged-out-register-form-container">
-            <p>Register new account: </p>
+            <p>{{ 'PROFILE.REGISTER_ACCOUNT' | translate }}{{ 'COMMON.MARK.COLON' | translate }}</p>
 
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label for="register_username" class="control-label">Username:</label>
+                    <label for="register_username" class="control-label">
+                        {{ 'COMMON.USERNAME' | translate }}{{ 'COMMON.MARK.COLON' | translate }}
+                    </label>
 
                     <div class="input-container">
                         <input id="register_username" type="text" class="form-control"
@@ -72,7 +75,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="register_email" class="control-label">Email:</label>
+                    <label for="register_email" class="control-label">
+                        {{ 'COMMON.EMAIL' | translate }}{{ 'COMMON.MARK.COLON' | translate }}
+                    </label>
 
                     <div class="input-container">
                         <input id="register_email" type="email" class="form-control"
@@ -83,7 +88,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="register_password" class="control-label">Password:</label>
+                    <label for="register_password" class="control-label">
+                        {{ 'PROFILE.PASSWORD.NOUN' | translate }}{{ 'COMMON.MARK.COLON' | translate }}
+                    </label>
 
                     <div class="input-container">
                         <input id="register_password" type="password" class="form-control"
@@ -93,7 +100,9 @@
                       class="profile-login-password-error">{{register.error.password}}</span>
                 </div>
                 <div class="form-group">
-                    <label for="register_repeat_password" class="control-label">Repeat password:</label>
+                    <label for="register_repeat_password" class="control-label">
+                        {{ 'PROFILE.PASSWORD.REPEAT' | translate }}{{ 'COMMON.MARK.COLON' | translate }}
+                    </label>
 
                     <div class="input-container">
                         <input id="register_repeat_password" type="password" class="form-control"
@@ -105,10 +114,10 @@
 
                 <div class="btn-group">
                     <button class="btn btn-default" data-ng-click="register.submit()">
-                        Register new account
+                        {{ 'PROFILE.REGISTER_ACCOUNT' | translate }}
                     </button>
                     <button class="btn btn-default" data-ng-click="register.reset()">
-                        Reset
+                        {{ 'COMMON.LABEL.RESET' | translate }}
                     </button>
                 </div>
             </form>

@@ -24,6 +24,9 @@ ini_set('error_reporting', E_ALL);
     <script src="js/libs/textAngular.min.js"></script>
     <script src="js/libs/textAngular-sanitize.min.js"></script>
     <script src="js/libs/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.4.0/angular-translate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-url/2.4.0/angular-translate-loader-url.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.4.0/angular-translate-loader-static-files.min.js"></script>
 
     <script src="js/libs/markerclusterer_packed.js"></script>
     <script src="js/libs/oms.min.js"></script>

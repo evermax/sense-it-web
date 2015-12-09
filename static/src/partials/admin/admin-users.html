@@ -2,10 +2,10 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Id</th>
-        <th>Username</th>
-        <th>email</th>
-        <th>Admin?</th>
+        <th translate="ADMIN.ID"></th>
+        <th translate="COMMON.USERNAME"></th>
+        <th translate="ADMIN.EMAIL"></th>
+        <th>{{ 'COMMON.LABEL.ADMIN' | translate }}{{ 'COMMON.MARK.QUESTION' | translate }}</th>
     </tr>
     </thead>
     <tbody>
@@ -15,16 +15,18 @@
         <td>{{user.email}}</td>
         <td>
             <span data-ng-if="user.admin">
-                <b>Yes</b>
+                <b translate="ADMIN.YES"></b>
                 <button data-ng-if="user.id != status.profile.id"
                         class="btn btn-default btn-xs"
-                        data-ng-click="actions.setAdmin(user.id, false)">Remove permission
+                        data-ng-click="actions.setAdmin(user.id, false)"
+                        translate="ADMIN.REMOVE_PERMISSION">
                 </button>
             </span>
             <span data-ng-if="!user.admin">
-                No
+                {{ 'ADMIN.NO' | translate }}
                 <button class="btn btn-default btn-xs"
-                        data-ng-click="actions.setAdmin(user.id, true)">Grant permission
+                        data-ng-click="actions.setAdmin(user.id, true)"
+                        translate="ADMIN.GRANT_PERMISSION">
                 </button>
             </span>
         </td>
